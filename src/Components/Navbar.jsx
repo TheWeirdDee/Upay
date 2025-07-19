@@ -52,7 +52,7 @@ const Navbar = () => {
       </div>
 
       <div
-        className={`fixed top-[64px] left-0 w-full bg-purple-100 shadow-md overflow-hidden transition-all duration-500 ease-in-out z-40 border-t border-[#334872] lg:hidden ${
+        className={`fixed top-[64px] left-0 w-full bg-purple-100 shadow-md overflow-hidden transition-all duration-500 ease-in-out z-40 border-t border-[#3348722c] lg:hidden ${
           isOpen ? "max-h-[500px]" : "max-h-0"
         }`}
       >

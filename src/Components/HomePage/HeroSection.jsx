@@ -59,7 +59,7 @@ Bank less. Live more.
      
       <div className="w-full md:w-1/2 flex justify-center items-center relative mt-10 md:mt-0">
         
-        <div className="absolute w-[400px] h-[400px] md:w-[400px] md:h-[400px] lg:w-[500px] lg:h-[500px] border border-black/10 rounded-full animate-spin-slow z-0" />
+        <div className="absolute w-[350px] h-[350px] md:w-[400px] md:h-[400px] lg:w-[500px] lg:h-[500px] border border-black/10 rounded-full animate-spin-slow z-0" />
         <div className="absolute w-[330px] h-[330px] md:w-[320px] md:h-[320px] lg:w-[420px] lg:h-[420px] border border-black/5 rounded-full animate-spin-slower z-0" />
 
          
