@@ -72,7 +72,7 @@ const UPayFeatures = () => {
             whileInView={{ opacity: 1, x: 0, y: 0 }}
             transition={{ duration: 0.7, delay: index * 0.2 }}
             viewport={{ once: true }}
-            className="w-full md:w-[40%] bg-purple-200 p-4 md:p-5 rounded-2xl shadow-md relative mb-6 md:mb-0"
+            className="sm:w-[80%] mx-auto lg:w-[50%] w-full md:w-[90%] bg-purple-200 p-4 md:p-5 rounded-2xl shadow-md relative mb-6 md:mb-0"
           >
             <IconWrapper icon={card.icon} />
             <h3 className="text-lg font-semibold text-purple-900">
@@ -85,11 +85,11 @@ const UPayFeatures = () => {
                 <img
                   src={card.image}
                   alt="transaction"
-                  className="absolute top-0 left-1/2 -translate-x-1/2 w-[550px] md:w-[450px] h-[480px] object-cover"
+                  className="absolute top-0 left-1/2 -translate-x-1/2 w-[450px] md:w-[450px] sm:w-[400px] h-[480px] object-cover"
                 />
 
                 {/* Deposit Received */}
-                <div className="absolute top-[45%] sm:top-[42%] left-1/2 transform -translate-x-1/2 bg-white px-3 py-4 text-xs md:text-sm rounded-xl shadow text-purple-800 font-semibold flex items-center   gap-7 sm:w-[85%] w-[75%] md:w-[50%]">
+                <div className="absolute top-[45%] sm:top-[42%] left-1/2 transform -translate-x-1/2 bg-white px-3 py-4 text-xs md:text-sm rounded-xl shadow text-purple-800 font-semibold flex items-center   gap-7 sm:w-[65%] w-[80%] lg:w-[75%] md:w-[100%]">
                   <div className="flex items-center gap-2">
                     <div className="bg-purple-100 p-2 rounded-full text-purple-800 text-base">
                       <FaHandHoldingUsd />
@@ -104,7 +104,7 @@ const UPayFeatures = () => {
                 </div>
 
                 {/* Semi-transparent duplicate */}
-                <div className="absolute top-[62%] sm:top-[58%] mt-1 left-1/2 transform -translate-x-1/2 bg-white/30 px-0 py-2 text-xs md:text-sm rounded shadow text-purple-800 font-semibold flex items-center justify-between gap-0 w-[58%] md:w-[58%]">
+                <div className="absolute top-[62%] sm:top-[58%] mt-1 left-1/2 transform -translate-x-1/2 bg-white/30 px-0 py-2 text-xs md:text-sm rounded shadow text-purple-800 font-semibold flex items-center justify-between gap-0 sm:w-[45%] w-[60%] lg:w-[47%] md:w-[50%]">
                   <div className="flex items-center gap-2">
                     <div className="bg-purple-100 p-2 rounded-full text-purple-800/30 text-base">
                       <FaHandHoldingUsd />
@@ -114,7 +114,7 @@ const UPayFeatures = () => {
                     </span>
                   </div>
                 </div>
-                <div className="absolute top-[72%] mt-2 left-1/2 transform -translate-x-1/2 bg-white/30 px-0 py-2 text-xs md:text-sm rounded shadow text-purple-800 font-semibold flex items-center justify-between gap-0 w-[58%] md:w-[58%]">
+                <div className="absolute top-[72%] mt-2 left-1/2 transform -translate-x-1/2 bg-white/30 px-0 py-2 text-xs md:text-sm rounded shadow text-purple-800 font-semibold flex items-center justify-between gap-0 sm:w-[45%] w-[60%] lg:w-[47%] md:w-[50%]]">
                   <div className="flex items-center gap-2">
                     <div className="bg-purple-100 p-2 rounded-full text-purple-800/30 text-base">
                       <FaHandHoldingUsd />
@@ -124,7 +124,7 @@ const UPayFeatures = () => {
                     </span>
                   </div>
                 </div>
-                <div className="absolute top-[82%] mt-3 left-1/2 transform -translate-x-1/2 bg-white/30 px-0 py-2 text-xs md:text-sm rounded shadow text-purple-800 font-semibold flex items-center justify-between gap-0 w-[58%] md:w-[58%]">
+                <div className="absolute top-[82%] mt-3 left-1/2 transform -translate-x-1/2 bg-white/30 px-0 py-2 text-xs md:text-sm rounded shadow text-purple-800 font-semibold flex items-center justify-between gap-0 sm:w-[45%] w-[60%] lg:w-[47%] md:w-[50%]">
                   <div className="flex items-center gap-2">
                     <div className="bg-purple-100 p-2 rounded-full text-purple-800/30 text-base">
                       <FaHandHoldingUsd />
