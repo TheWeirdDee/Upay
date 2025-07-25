@@ -89,7 +89,7 @@ const UPayFeatures = () => {
                 />
 
                 {/* Deposit Received */}
-                <div className="absolute top-[45%] left-1/2 transform -translate-x-1/2 bg-white px-3 py-4 text-xs md:text-sm rounded-xl shadow text-purple-800 font-semibold flex items-center   gap-7 w-[75%] md:w-[50%]">
+                <div className="absolute top-[45%] sm:top-[42%] left-1/2 transform -translate-x-1/2 bg-white px-3 py-4 text-xs md:text-sm rounded-xl shadow text-purple-800 font-semibold flex items-center   gap-7 sm:w-[85%] w-[75%] md:w-[50%]">
                   <div className="flex items-center gap-2">
                     <div className="bg-purple-100 p-2 rounded-full text-purple-800 text-base">
                       <FaHandHoldingUsd />
@@ -104,7 +104,7 @@ const UPayFeatures = () => {
                 </div>
 
                 {/* Semi-transparent duplicate */}
-                <div className="absolute top-[62%] mt-1 left-1/2 transform -translate-x-1/2 bg-white/30 px-0 py-2 text-xs md:text-sm rounded shadow text-purple-800 font-semibold flex items-center justify-between gap-0 w-[58%] md:w-[58%]">
+                <div className="absolute top-[62%] sm:top-[58%] mt-1 left-1/2 transform -translate-x-1/2 bg-white/30 px-0 py-2 text-xs md:text-sm rounded shadow text-purple-800 font-semibold flex items-center justify-between gap-0 w-[58%] md:w-[58%]">
                   <div className="flex items-center gap-2">
                     <div className="bg-purple-100 p-2 rounded-full text-purple-800/30 text-base">
                       <FaHandHoldingUsd />
