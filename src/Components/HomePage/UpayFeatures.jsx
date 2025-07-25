@@ -5,9 +5,10 @@ import {
   FaChartBar,
   FaGlobe,
   FaCreditCard,
+  FaHandHoldingUsd,
   FaCompass,
 } from "react-icons/fa";
-import transactionImg from "../../assets/Images/UpayFeatures.png";
+import transactionImg from "../../assets/Images/UpayFeaturess.png";
 import atmCard from "../../assets/Images/UpayHero.png";
 
 const cards = [
@@ -64,45 +65,71 @@ const UPayFeatures = () => {
 
       {/* First Row (2 Cards) */}
       <div className="flex flex-col md:flex-row md:justify-center md:gap-6 mb-6">
-        {cards.slice(0, 2).map((card, index) => (
-          <motion.div
-            key={index}
-            initial={{ opacity: 0, ...card.motion }}
-            whileInView={{ opacity: 1, x: 0, y: 0 }}
-            transition={{ duration: 0.7, delay: index * 0.2 }}
-            viewport={{ once: true }}
-            className="w-full md:w-[40%] bg-purple-50 p-4 md:p-5 rounded-2xl shadow-md relative mb-6 md:mb-0"
-          >
-            <IconWrapper icon={card.icon} />
-            <h3 className="text-lg font-semibold text-purple-900">{card.title}</h3>
-            <p className="mt-2 text-sm text-purple-700">{card.text}</p>
+  {cards.slice(0, 2).map((card, index) => (
+    <motion.div
+      key={index}
+      initial={{ opacity: 0, ...card.motion }}
+      whileInView={{ opacity: 1, x: 0, y: 0 }}
+      transition={{ duration: 0.7, delay: index * 0.2 }}
+      viewport={{ once: true }}
+      className="w-full md:w-[40%] bg-purple-200 p-4 md:p-5 rounded-2xl shadow-md relative mb-6 md:mb-0"
+    >
+      <IconWrapper icon={card.icon} />
+      <h3 className="text-lg font-semibold text-purple-900">{card.title}</h3>
+      <p className="mt-2 text-sm text-purple-700">{card.text}</p>
 
-            {card.image && (
-              <div className="relative mt-4 h-80 w-100">
-                <img src={card.image} alt="transaction" className="mx-auto h-full object-cover rounded-xl" />
-                 <div className="absolute top-30 left-1/2 transform -translate-x-1/2 bg-white px-16 py-4 text-sm rounded shadow text-purple-800 font-semibold">
-            Deposit Received
-          </div>
-           <div className="absolute top-50 left-1/2 transform -translate-x-1/2 bg-white px-4 py-3 text-sm rounded shadow text-purple-800 font-semibold">
-            Deposit Received
-          </div>
-              </div>
-            )}
+      {card.image && (
+ <div className="relative mt-4 h-[350px] rounded-xl overflow-hidden">
+  <img
+    src={card.image}
+    alt="transaction"
+    className="absolute top-0 left-1/2 -translate-x-1/2 w-[550px] md:w-[450px] h-[480px] object-cover"
+  />
+ 
 
-            {card.chart && (
-              <div className="flex items-end gap-2 h-28 mt-6 px-2">
-                {[40, 100, 70, 90, 60].map((height, i) => (
-                  <div
-                    key={i}
-                    className="w-4 bg-purple-400 rounded-md"
-                    style={{ height: `${height}px` }}
-                  />
-                ))}
-              </div>
-            )}
-          </motion.div>
-        ))}
+
+
+
+    {/* Deposit Received */}
+    <div className="absolute top-[45%] left-1/2 transform -translate-x-1/2 bg-white px-3 py-4 text-xs md:text-sm rounded-xl shadow text-purple-800 font-semibold flex items-center justify-between gap-0 w-[80%] md:w-[80%]">
+      <div className="flex items-center gap-2">
+        <div className="bg-purple-100 p-2 rounded-full text-purple-800 text-base">
+          <FaHandHoldingUsd />
+        </div>
+        <span>Deposit Received</span>
       </div>
+      <span className="text-purple-700 font-bold">$3,000</span>
+    </div>
+
+    {/* Semi-transparent duplicate */}
+    <div className="absolute top-[62%] left-1/2 transform -translate-x-1/2 bg-white/30 px-0 py-2 text-xs md:text-sm rounded shadow text-purple-800 font-semibold flex items-center justify-between gap-0 w-[58%] md:w-[58%]">
+      <div className="flex items-center gap-2">
+        <div className="bg-purple-100 p-2 rounded-full text-purple-800/30 text-base">
+          <FaHandHoldingUsd />
+        </div>
+        <span className="text-purple-800/30">Deposit Received</span>
+      </div>
+    </div>
+  </div>
+)}
+
+
+      {card.chart && (
+        <div className="flex items-end gap-2 h-28 mt-6 px-2">
+          {[40, 100, 70, 90, 60].map((height, i) => (
+            <div
+              key={i}
+              className="w-4 bg-purple-400 rounded-md"
+              style={{ height: `${height}px` }}
+            />
+          ))}
+        </div>
+      )}
+    </motion.div>
+  ))}
+</div>
+
+
 
       {/* Second Row (3 Cards) */}
       <div className="w-full flex justify-center">
